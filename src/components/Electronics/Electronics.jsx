@@ -1,3 +1,4 @@
+import Styles from './Electronics.module.css'
 import React from 'react';
 
 function Electronics() {
@@ -20,7 +21,7 @@ function Electronics() {
 
 
 
-    return <><h1>Welcome to the Electronics Page</h1><div id="products-container"></div></>;
+    return <><h1>Welcome to the Electronics Page</h1><div id="products-container" className={Styles.products}></div></>;
 }
 
 export default Electronics;

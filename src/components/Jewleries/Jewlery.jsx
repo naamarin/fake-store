@@ -6,7 +6,7 @@ function Jewlery() {
         .then(res => res.json())
         .then(data => {
             const container = document.getElementById('products-container');
-
+            console.log(data);
             data.forEach(product => {
                 const productDiv = document.createElement('div');
                 productDiv.className = `${Styles.product}`
@@ -15,6 +15,7 @@ function Jewlery() {
                         <h4>${product.description}</h4>
                         <p>Price: $${product.price}</p>
                         <img src="${product.image}" alt="${product.title}" width="100">
+                        <p>Rate: ${product.rating.rate}</p>
                     `;
                 container.appendChild(productDiv);
             });

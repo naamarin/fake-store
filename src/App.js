@@ -14,6 +14,7 @@ function App() {
     </header>
     <footer>
         <Routes>
+          <Route index element={<Home/>}/>
           <Route path="/jewlery" element={<Jewlery/>}/>
           <Route path="/electronics" element={<Electronics/>}/>
         </Routes>
